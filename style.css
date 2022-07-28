@@ -3,6 +3,7 @@
   box-sizing: border-box;
   padding: 0;
 }
+
 body{
   height: 100vh;
   display: flex;
@@ -13,25 +14,43 @@ body{
   font-family: sans-serif;
   color: white;
 }
+#loc{
+  display: block;
+  border: 3px solid aliceblue;
+  font-size: 1.5rem;
+  padding: 2%;
+}
 .location,.temperature{
   height: 30vh;
   width: 50%;
   display: flex;
+  font-size: 1.5rem;
   justify-content: space-around;
   align-items: center;
 }
+.icon{
+  width: 150px;
+  height: 150px;
+  display: block;
+}
 .temperature{
   flex-direction: column;
+  font-size: 2rem;
 }
 .degree-section{
   display: flex;
   align-items: center;
   cursor: pointer;
+  font-size: 2.5rem;
+  
+}
+.degree-section:hover{
+  color: rgb(187, 216, 228);
 }
 .degree-section span{
   margin: 10px;
-  font-size:30px;
+
 }
 .degree-section h2{
-  font-size: 40px;
+  
 }
